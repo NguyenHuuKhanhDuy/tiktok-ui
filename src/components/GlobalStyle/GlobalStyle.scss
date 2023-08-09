@@ -10,7 +10,7 @@
     --default-layout-horizontal-spacer: 24px;
     --black: #000;
     --white: #fff;
-    --text-color: #333;
+    --text-color: #161823;
 }
 
 * {
@@ -28,6 +28,7 @@ body {
     font-size: 1.6rem;
     line-height: 1.5;
     text-rendering: optimizeSpeed;
+    color: var(--text-color);
 }
 
 button,
@@ -40,4 +41,22 @@ input,
 a[href] {
     color: var(--text-color);
     text-decoration: none;
+}
+
+//custom tippy tooltip
+body {
+    .tippy-box {
+        border-radius: 8px;
+        font-weight: 600;
+        font-size: 1.6rem;
+        line-height: 2.2rem;
+        background-color: rgba(84, 84, 84, 0.92);
+    }
+
+    .tippy-content {
+        padding: 8px 9px;
+    }
+    .tippy-arrow {
+        color: rgba(84, 84, 84, 0.92);
+    }
 }
