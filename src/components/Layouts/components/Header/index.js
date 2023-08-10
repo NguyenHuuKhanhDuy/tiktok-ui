@@ -20,6 +20,7 @@ import Image from '~/components/Image';
 import Menu from '~/components/Popper/Menu';
 import styles from './Header.module.scss';
 import Search from '~/components/Layouts/components/Search';
+import { Link } from 'react-router-dom';
 const cx = classNames.bind(styles);
 const MENU_ITEMS = [
     {
@@ -81,7 +82,10 @@ function Header() {
     return (
         <header className={cx('wrapper')}>
             <div className={cx('inner')}>
-                <img className={cx('logo')} src={images.logo} alt="Tiktok" />
+                <Link to="/">
+                    <img className={cx('logo')} src={images.logo} alt="Tiktok" />
+                </Link>
+
                 {/* search */}
                 <Search />
                 <div className={cx('actions')}>
